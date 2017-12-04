@@ -1,5 +1,6 @@
 package com.example.ankitsingh.ankit_androidproject;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.TextViewCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -25,9 +26,8 @@ public class MainActivity extends AppCompatActivity {
         viewbuttons.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,Image.class));
                 texter.setText(editor.getText().toString());
-
-
             }
         });
 
