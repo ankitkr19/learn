@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,9 +19,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Image"
+            android:name=".activities.Image"
             android:label="@string/title_activity_image"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".activities.ListActivity"/>
     </application>
 
 </manifest>
